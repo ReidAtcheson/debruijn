@@ -3,6 +3,7 @@
 #include <fstream>
 
 #include <cmath>
+#include <cstdlib>
 
 #include "preface.h"
 #include "debruijn.h"
@@ -16,10 +17,15 @@
 
 int main(int argc,char** argv){
 
-  int nx=512;
-  int ny=512;
 
-  real_t A = 25.0;
+  if(argc<=3){
+    std::cout<<"Usage: ./main nx ny A"<<std::endl;
+    return 1;
+  }
+
+  int nx=atoi(argv[1]);
+  int ny=atoi(argv[2]);
+  real_t A = atof(argv[3]);
   real_t x0= -A;
   real_t y0= -A;
   real_t xn=  A;

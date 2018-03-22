@@ -11,7 +11,7 @@ typedef boost::multiprecision::number<boost::multiprecision::cpp_dec_float<50> >
 typedef boost::multiprecision::number<boost::multiprecision::cpp_dec_float<100> > cpp_dec_float_100;
 
 //typedef cpp_dec_float_100 real_t;
-typedef float real_t;
+typedef double real_t;
 
 
 #endif

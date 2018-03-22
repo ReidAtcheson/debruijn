@@ -3,7 +3,7 @@
 
 BOOST_INC := /fserver/reida/lib/boost_1_66_0
 CXX := icpc
-CFLAGS := -O3 -qopenmp -I$(BOOST_INC)
+CFLAGS := -O3 -xHOST -qopenmp -I$(BOOST_INC)
 LDFLAGS := -qopenmp
 
 
